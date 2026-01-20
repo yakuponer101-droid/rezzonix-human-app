@@ -3,6 +3,7 @@ import { create } from 'zustand';
 interface Patient {
   name: string;
   age?: number;
+  gender?: 'male' | 'female' | 'child';
 }
 
 interface OrganResult {
