@@ -111,6 +111,7 @@ export default function OrgansScreen() {
             <View style={styles.grid}>
               {ORGANS.map((organ) => {
                 const isSelected = selected.includes(organ.key);
+                const organName = i18n.language === 'en' ? organ.en : organ.tr;
                 return (
                   <TouchableOpacity
                     key={organ.key}
@@ -132,7 +133,7 @@ export default function OrgansScreen() {
                         isSelected && styles.organTextSelected,
                       ]}
                     >
-                      {t(`organs.list.${organ.key}`)}
+                      {organName}
                     </Text>
                     {isSelected && (
                       <View style={styles.checkmark}>
