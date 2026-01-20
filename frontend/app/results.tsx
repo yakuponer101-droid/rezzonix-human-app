@@ -89,6 +89,33 @@ export default function ResultsScreen() {
             </View>
           </View>
 
+          {/* Metric Cards - Streamlit Style */}
+          <View style={styles.metricsGrid}>
+            <Card style={styles.metricCard}>
+              <Text style={styles.metricLabel}>Genel Skor</Text>
+              <Text style={styles.metricValue}>{currentAnalysis.overall_score}</Text>
+              <Text style={styles.metricSubtext}>/ 100</Text>
+            </Card>
+
+            <Card style={styles.metricCard}>
+              <Text style={styles.metricLabel}>Risk Durumu</Text>
+              <Text
+                style={[
+                  styles.metricValue,
+                  { color: getStatusColor(currentAnalysis.band), fontSize: 18 },
+                ]}
+              >
+                {currentAnalysis.band}
+              </Text>
+            </Card>
+
+            <Card style={styles.metricCard}>
+              <Text style={styles.metricLabel}>Frekans</Text>
+              <Text style={styles.metricValue}>{currentAnalysis.frequency}</Text>
+              <Text style={styles.metricSubtext}>Hz - Stabil</Text>
+            </Card>
+          </View>
+
           {/* Patient & Overall Info */}
           <Card>
             <View style={styles.infoGrid}>
