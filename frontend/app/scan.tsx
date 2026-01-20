@@ -306,4 +306,25 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: COLORS.text,
   },
+  logContainer: {
+    backgroundColor: COLORS.card,
+    borderRadius: 12,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    maxHeight: 150,
+  },
+  logTitle: {
+    fontSize: 12,
+    color: COLORS.primary,
+    fontWeight: '600',
+    marginBottom: 8,
+    letterSpacing: 1,
+  },
+  logMessage: {
+    fontSize: 12,
+    color: COLORS.success,
+    fontFamily: 'monospace',
+    marginBottom: 4,
+  },
 });
