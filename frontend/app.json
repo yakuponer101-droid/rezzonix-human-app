@@ -51,9 +51,6 @@
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "EXPO_PUBLIC_BACKEND_URL": "https://mobile-app-creator-40.preview.emergentagent.com"
     }
   }
 }
