@@ -25,10 +25,16 @@ export default function PatientScreen() {
   const { setPatient } = useAppStore();
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
+  const [gender, setGender] = useState<'male' | 'female' | 'child' | null>(null);
 
   const handleContinue = () => {
     if (!name.trim()) {
       Alert.alert(t('common.error'), t('patient.errorName'));
+      return;
+    }
+
+    if (!gender) {
+      Alert.alert(t('common.error'), 'Lütfen cinsiyet seçin.');
       return;
     }
 
@@ -38,7 +44,7 @@ export default function PatientScreen() {
       return;
     }
 
-    setPatient({ name: name.trim(), age: ageNum });
+    setPatient({ name: name.trim(), age: ageNum, gender });
     router.push('/organs');
   };
 
