@@ -71,11 +71,11 @@ export default function OrgansScreen() {
   const { setSelectedOrgans } = useAppStore();
   const [selected, setSelected] = useState<string[]>(['heart', 'liver', 'kidney']);
 
-  const toggleOrgan = (organ: string) => {
-    if (selected.includes(organ)) {
-      setSelected(selected.filter((o) => o !== organ));
+  const toggleOrgan = (organKey: string) => {
+    if (selected.includes(organKey)) {
+      setSelected(selected.filter((o) => o !== organKey));
     } else {
-      setSelected([...selected, organ]);
+      setSelected([...selected, organKey]);
     }
   };
 
@@ -85,8 +85,12 @@ export default function OrgansScreen() {
       return;
     }
 
-    // Convert keys to Turkish names
-    const organNames = selected.map((key) => t(`organs.list.${key}`));
+    // Get translated organ names
+    const currentLang = i18n.language || 'tr';
+    const organNames = selected.map((key) => {
+      const organ = ORGANS.find(o => o.key === key);
+      return organ ? (currentLang === 'en' ? organ.en : organ.tr) : key;
+    });
     setSelectedOrgans(organNames);
     router.push('/sensor');
   };
