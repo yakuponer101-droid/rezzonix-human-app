@@ -46,10 +46,25 @@ export default function ScanScreen() {
     startScan();
   }, []);
 
+  const [logMessages, setLogMessages] = useState<string[]>([]);
+
   const startScan = async () => {
     setStatus('analyzing');
+    setLogMessages([]);
 
-    // Simulate progress
+    // Detailed scan phases from Colab example
+    const scanPhases = [
+      { progress: 15, message: '> Veri paketleri [0xFF4A] gönderiliyor...' },
+      { progress: 25, message: '> Bölge taraması başlatıldı...' },
+      { progress: 40, message: '> Anomali tespiti ve manyetik alan taraması...' },
+      { progress: 55, message: '> Doku yoğunluğu analizi: Normal' },
+      { progress: 70, message: '> Manyetik alan: 45µT - Stabil' },
+      { progress: 85, message: '> Senkronizasyon tamamlanıyor...' },
+      { progress: 95, message: '> Sonuçlar derleniyor...' },
+    ];
+
+    let currentPhase = 0;
+    
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -57,7 +72,16 @@ export default function ScanScreen() {
           completeScan();
           return 100;
         }
-        return prev + Math.random() * 10;
+
+        const newProgress = prev + Math.random() * 8;
+        
+        // Add log messages at milestones
+        if (currentPhase < scanPhases.length && newProgress >= scanPhases[currentPhase].progress) {
+          setLogMessages((logs) => [...logs, scanPhases[currentPhase].message]);
+          currentPhase++;
+        }
+
+        return Math.min(newProgress, 100);
       });
     }, 300);
   };
