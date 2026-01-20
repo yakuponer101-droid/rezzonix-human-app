@@ -417,6 +417,33 @@ const styles = StyleSheet.create({
   iconButton: {
     padding: 8,
   },
+  metricsGrid: {
+    flexDirection: 'row',
+    gap: 12,
+    marginBottom: 20,
+  },
+  metricCard: {
+    flex: 1,
+    alignItems: 'center',
+    paddingVertical: 16,
+  },
+  metricLabel: {
+    fontSize: 11,
+    color: COLORS.textSecondary,
+    marginBottom: 8,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  metricValue: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: COLORS.text,
+  },
+  metricSubtext: {
+    fontSize: 12,
+    color: COLORS.textSecondary,
+    marginTop: 4,
+  },
   infoGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
