@@ -16,6 +16,7 @@ import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { COLORS } from '@/utils/constants';
 import { useAppStore } from '@/store/useAppStore';
+import i18n from '@/locales/i18n';
 
 const ORGANS = [
   { key: 'bone_density', icon: 'body', tr: 'Kemik Mineral Yoğunluğu', en: 'Bone Mineral Density' },
