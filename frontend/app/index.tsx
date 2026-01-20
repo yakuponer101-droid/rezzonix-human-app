@@ -17,6 +17,7 @@ import { Card } from '@/components/Card';
 import { Button } from '@/components/Button';
 import { ResonanceVisualizer } from '@/components/ResonanceVisualizer';
 import { SplashScreen } from '@/components/SplashScreen';
+import { LanguageSelection } from '@/components/LanguageSelection';
 import { COLORS, FREQUENCY } from '@/utils/constants';
 import { useAppStore } from '@/store/useAppStore';
 import '@/locales/i18n';
@@ -28,9 +29,17 @@ export default function HomeScreen() {
   const [accepted, setAccepted] = useState(false);
   const [showDisclaimer, setShowDisclaimer] = useState(true);
   const [showSplash, setShowSplash] = useState(true);
+  const [showLanguageSelection, setShowLanguageSelection] = useState(false);
 
   if (showSplash) {
-    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+    return <SplashScreen onFinish={() => {
+      setShowSplash(false);
+      setShowLanguageSelection(true);
+    }} />;
+  }
+
+  if (showLanguageSelection) {
+    return <LanguageSelection onLanguageSelected={() => setShowLanguageSelection(false)} />;
   }
 
   const handleContinue = () => {
