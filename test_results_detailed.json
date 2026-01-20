@@ -1,0 +1,37 @@
+[
+  {
+    "test": "Health Check",
+    "success": true,
+    "message": "API responding correctly: RezzoniX Analyzer API",
+    "response_data": null,
+    "timestamp": "2026-01-20T12:40:15.287660"
+  },
+  {
+    "test": "Create Analysis",
+    "success": true,
+    "message": "Analysis created successfully. ID: 5b54264f-06c4-4336-8ce2-54251377f0a4, Score: 73, Band: Takip",
+    "response_data": null,
+    "timestamp": "2026-01-20T12:40:15.340396"
+  },
+  {
+    "test": "Get All Analyses",
+    "success": true,
+    "message": "Retrieved 3 analyses successfully",
+    "response_data": null,
+    "timestamp": "2026-01-20T12:40:15.352409"
+  },
+  {
+    "test": "Get Single Analysis",
+    "success": true,
+    "message": "Retrieved analysis successfully. Patient: Ahmet Y\u0131lmaz",
+    "response_data": null,
+    "timestamp": "2026-01-20T12:40:15.403046"
+  },
+  {
+    "test": "Invalid Analysis ID",
+    "success": true,
+    "message": "Correctly returned 404 for invalid ID",
+    "response_data": null,
+    "timestamp": "2026-01-20T12:40:15.411277"
+  }
+]
