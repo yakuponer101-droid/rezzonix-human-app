@@ -1,0 +1,128 @@
+{
+  "app": {
+    "name": "RezzoniX Analyzer",
+    "subtitle": "İnsan Analiz Modu"
+  },
+  "disclaimer": {
+    "title": "Kullanım Bildirimi",
+    "text": "RezzoniX firması tarafından geliştirilmiştir ve Yakup Öner tarafından geliştirilen analiz yaklaşımını temel alır.\n\nBu sistem yalnızca destekleyici analiz amaçlıdır; tanı, tedavi veya tıbbi müdahale amacıyla kullanılmaz.\n\nUygulama çıktıları klinik değerlendirme yerine geçmez. Sağlıkla ilgili kararlar yetkili sağlık profesyonellerinin değerlendirmesine dayanmalıdır.",
+    "accept": "Okudum ve kabul ediyorum",
+    "continue": "Devam"
+  },
+  "patient": {
+    "title": "Danışan Bilgisi",
+    "name": "Ad Soyad",
+    "namePlaceholder": "Ad Soyad girin",
+    "age": "Yaş (opsiyonel)",
+    "agePlaceholder": "Yaş",
+    "continue": "Devam",
+    "history": "Geçmiş",
+    "errorName": "Lütfen Ad Soyad girin.",
+    "errorAge": "Yaş 0-120 arasında olmalıdır."
+  },
+  "organs": {
+    "title": "Organ Seçimi",
+    "subtitle": "Analiz edilecek organları seçin",
+    "back": "Geri",
+    "continue": "Sensör Seçimi",
+    "errorMinimum": "En az 1 organ seçin.",
+    "list": {
+      "brain": "Beyin",
+      "heart": "Kalp",
+      "lung": "Akciğer",
+      "liver": "Karaciğer",
+      "kidney": "Böbrek",
+      "stomach": "Mide",
+      "pancreas": "Pankreas",
+      "intestine": "Bağırsak",
+      "thyroid": "Tiroid",
+      "spine": "Omurga",
+      "immune": "Bağışıklık",
+      "circulation": "Dolaşım"
+    }
+  },
+  "sensor": {
+    "title": "Sensör Bağlantısı",
+    "subtitle": "Analiz için sensör tipini seçin",
+    "ble": "Bluetooth (BLE)",
+    "usb": "USB Bağlantı",
+    "bleSubtitle": "Bluetooth cihazları tara",
+    "usbSubtitle": "USB OTG ile bağlan",
+    "scan": "Cihaz Tara",
+    "connect": "Bağlan",
+    "back": "Geri",
+    "startScan": "Taramayı Başlat",
+    "scanning": "Taranıyor...",
+    "noDevices": "Cihaz bulunamadı",
+    "connected": "Bağlandı",
+    "errorSelect": "Lütfen bir sensör seçin."
+  },
+  "scan": {
+    "title": "Analiz",
+    "preparing": "Hazırlanıyor...",
+    "analyzing": "Analiz devam ediyor...",
+    "complete": "Analiz tamamlandı",
+    "cancel": "İptal"
+  },
+  "results": {
+    "title": "Sonuçlar",
+    "patient": "Danışan",
+    "age": "Yaş",
+    "overallScore": "Genel Skor",
+    "status": "Durum",
+    "organ": "Organ",
+    "score": "Skor",
+    "stress": "Stres",
+    "note": "Not",
+    "newAnalysis": "Yeni Analiz",
+    "exportPdf": "PDF Dışa Aktar",
+    "history": "Geçmiş",
+    "frequency": "Frekans",
+    "sensor": "Sensör"
+  },
+  "history": {
+    "title": "Geçmiş Analizler",
+    "date": "Tarih",
+    "patient": "Danışan",
+    "age": "Yaş",
+    "organs": "Organlar",
+    "score": "Skor",
+    "open": "Aç",
+    "back": "Geri",
+    "newAnalysis": "Yeni Analiz",
+    "noData": "Henüz analiz yapılmamış",
+    "errorSelect": "Lütfen bir kayıt seçin."
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "language": "Dil",
+    "about": "Hakkında",
+    "version": "Versiyon"
+  },
+  "about": {
+    "title": "Künye / Bilgilendirme",
+    "developer": "Geliştirici: RezzoniX",
+    "methodology": "Yaklaşım / Metodoloji: Yakup Öner",
+    "note": "Not: Bu yazılım yalnızca destekleyici analiz amaçlıdır; tanı/tedavi amacı taşımaz.",
+    "back": "Geri"
+  },
+  "common": {
+    "yes": "Evet",
+    "no": "Hayır",
+    "ok": "Tamam",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "online": "ÇEVRİMİÇİ",
+    "offline": "ÇEVRİMDIŞI"
+  },
+  "status": {
+    "optimal": "Dengeli",
+    "monitor": "Takip",
+    "highMonitor": "Yüksek takip"
+  }
+}

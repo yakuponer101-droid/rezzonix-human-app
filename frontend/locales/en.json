@@ -1,0 +1,128 @@
+{
+  "app": {
+    "name": "RezzoniX Analyzer",
+    "subtitle": "Human Analysis Mode"
+  },
+  "disclaimer": {
+    "title": "Terms of Use",
+    "text": "Developed by RezzoniX and based on the analytical approach developed by Yakup Öner.\n\nThis system is for supportive analysis purposes only; it is not intended for diagnosis, treatment, or medical intervention.\n\nApplication outputs do not replace clinical evaluation. Health-related decisions should be based on the evaluation of authorized healthcare professionals.",
+    "accept": "I have read and accept",
+    "continue": "Continue"
+  },
+  "patient": {
+    "title": "Patient Information",
+    "name": "Full Name",
+    "namePlaceholder": "Enter full name",
+    "age": "Age (optional)",
+    "agePlaceholder": "Age",
+    "continue": "Continue",
+    "history": "History",
+    "errorName": "Please enter full name.",
+    "errorAge": "Age must be between 0-120."
+  },
+  "organs": {
+    "title": "Organ Selection",
+    "subtitle": "Select organs to analyze",
+    "back": "Back",
+    "continue": "Sensor Selection",
+    "errorMinimum": "Select at least 1 organ.",
+    "list": {
+      "brain": "Brain",
+      "heart": "Heart",
+      "lung": "Lung",
+      "liver": "Liver",
+      "kidney": "Kidney",
+      "stomach": "Stomach",
+      "pancreas": "Pancreas",
+      "intestine": "Intestine",
+      "thyroid": "Thyroid",
+      "spine": "Spine",
+      "immune": "Immune System",
+      "circulation": "Circulation"
+    }
+  },
+  "sensor": {
+    "title": "Sensor Connection",
+    "subtitle": "Select sensor type for analysis",
+    "ble": "Bluetooth (BLE)",
+    "usb": "USB Connection",
+    "bleSubtitle": "Scan for Bluetooth devices",
+    "usbSubtitle": "Connect via USB OTG",
+    "scan": "Scan Devices",
+    "connect": "Connect",
+    "back": "Back",
+    "startScan": "Start Scan",
+    "scanning": "Scanning...",
+    "noDevices": "No devices found",
+    "connected": "Connected",
+    "errorSelect": "Please select a sensor."
+  },
+  "scan": {
+    "title": "Analysis",
+    "preparing": "Preparing...",
+    "analyzing": "Analysis in progress...",
+    "complete": "Analysis complete",
+    "cancel": "Cancel"
+  },
+  "results": {
+    "title": "Results",
+    "patient": "Patient",
+    "age": "Age",
+    "overallScore": "Overall Score",
+    "status": "Status",
+    "organ": "Organ",
+    "score": "Score",
+    "stress": "Stress",
+    "note": "Note",
+    "newAnalysis": "New Analysis",
+    "exportPdf": "Export PDF",
+    "history": "History",
+    "frequency": "Frequency",
+    "sensor": "Sensor"
+  },
+  "history": {
+    "title": "Analysis History",
+    "date": "Date",
+    "patient": "Patient",
+    "age": "Age",
+    "organs": "Organs",
+    "score": "Score",
+    "open": "Open",
+    "back": "Back",
+    "newAnalysis": "New Analysis",
+    "noData": "No analysis performed yet",
+    "errorSelect": "Please select a record."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "about": "About",
+    "version": "Version"
+  },
+  "about": {
+    "title": "About / Information",
+    "developer": "Developer: RezzoniX",
+    "methodology": "Approach / Methodology: Yakup Öner",
+    "note": "Note: This software is for supportive analysis purposes only; it is not intended for diagnosis/treatment.",
+    "back": "Back"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "online": "ONLINE",
+    "offline": "OFFLINE"
+  },
+  "status": {
+    "optimal": "Optimal",
+    "monitor": "Monitor",
+    "highMonitor": "High Monitor"
+  }
+}
