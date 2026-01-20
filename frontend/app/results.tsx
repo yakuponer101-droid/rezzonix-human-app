@@ -234,6 +234,11 @@ export default function ResultsScreen() {
           {/* Action Buttons */}
           <View style={styles.buttons}>
             <Button
+              title="Kapsamlı Rapor"
+              onPress={() => router.push('/comprehensive')}
+              icon={<Ionicons name="document" size={20} color={COLORS.text} />}
+            />
+            <Button
               title="Detaylı Analiz"
               onPress={() => router.push('/detailed')}
               variant="outline"
