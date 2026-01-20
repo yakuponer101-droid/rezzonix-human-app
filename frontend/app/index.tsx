@@ -16,6 +16,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Card } from '@/components/Card';
 import { Button } from '@/components/Button';
 import { ResonanceVisualizer } from '@/components/ResonanceVisualizer';
+import { SplashScreen } from '@/components/SplashScreen';
 import { COLORS, FREQUENCY } from '@/utils/constants';
 import { useAppStore } from '@/store/useAppStore';
 import '@/locales/i18n';
@@ -26,6 +27,11 @@ export default function HomeScreen() {
   const { isOnline } = useAppStore();
   const [accepted, setAccepted] = useState(false);
   const [showDisclaimer, setShowDisclaimer] = useState(true);
+  const [showSplash, setShowSplash] = useState(true);
+
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+  }
 
   const handleContinue = () => {
     if (!accepted) {
