@@ -193,6 +193,18 @@ export default function ScanScreen() {
             </View>
           </View>
 
+          {/* Real-time Log Messages */}
+          {logMessages.length > 0 && (
+            <View style={styles.logContainer}>
+              <Text style={styles.logTitle}>SISTEM LOGU</Text>
+              {logMessages.map((msg, index) => (
+                <Text key={index} style={styles.logMessage}>
+                  {msg}
+                </Text>
+              ))}
+            </View>
+          )}
+
           {status !== 'complete' && (
             <Button
               title={t('scan.cancel')}
