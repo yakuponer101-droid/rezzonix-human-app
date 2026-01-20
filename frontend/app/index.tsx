@@ -140,7 +140,7 @@ export default function HomeScreen() {
               </View>
               <Text style={styles.systemTitle}>NEURAL NET</Text>
               <Text style={styles.systemValue}>Sync</Text>
-              <Text style={styles.systemStatus, { color: COLORS.secondary }]}>
+              <Text style={[styles.systemStatus, { color: COLORS.secondary }]}>
                 ALPHA
               </Text>
             </Card>
