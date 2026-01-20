@@ -234,6 +234,12 @@ export default function ResultsScreen() {
           {/* Action Buttons */}
           <View style={styles.buttons}>
             <Button
+              title="Detaylı Analiz"
+              onPress={() => router.push('/detailed')}
+              variant="outline"
+              icon={<Ionicons name="bar-chart" size={20} color={COLORS.primary} />}
+            />
+            <Button
               title={t('results.exportPdf')}
               onPress={handleExportPDF}
               variant="outline"
