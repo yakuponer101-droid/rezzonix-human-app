@@ -220,6 +220,33 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: COLORS.text,
   },
+  genderContainer: {
+    flexDirection: 'row',
+    gap: 12,
+    marginTop: 8,
+  },
+  genderButton: {
+    flex: 1,
+    backgroundColor: COLORS.backgroundLight,
+    borderWidth: 2,
+    borderColor: COLORS.border,
+    borderRadius: 12,
+    paddingVertical: 16,
+    alignItems: 'center',
+    gap: 8,
+  },
+  genderButtonSelected: {
+    borderColor: COLORS.primary,
+    backgroundColor: `${COLORS.primary}15`,
+  },
+  genderText: {
+    fontSize: 14,
+    color: COLORS.textSecondary,
+    fontWeight: '600',
+  },
+  genderTextSelected: {
+    color: COLORS.primary,
+  },
   buttons: {
     gap: 12,
   },
