@@ -140,8 +140,34 @@ export default function HomeScreen() {
               </View>
               <Text style={styles.systemTitle}>NEURAL NET</Text>
               <Text style={styles.systemValue}>Sync</Text>
-              <Text style={[styles.systemStatus, { color: COLORS.secondary }]}>
+              <Text style={styles.systemStatus, { color: COLORS.secondary }]}>
                 ALPHA
+              </Text>
+            </Card>
+          </View>
+
+          <View style={styles.systemGrid}>
+            <Card style={styles.systemCard}>
+              <View style={styles.systemHeader}>
+                <Text style={styles.systemLabel}>SYS.03</Text>
+                <Ionicons name="heart" size={24} color="#FF6B9D" />
+              </View>
+              <Text style={styles.systemTitle}>HEART</Text>
+              <Text style={styles.systemValue}>72 BPM</Text>
+              <Text style={[styles.systemStatus, { color: COLORS.success }]}>
+                NORMAL
+              </Text>
+            </Card>
+
+            <Card style={styles.systemCard}>
+              <View style={styles.systemHeader}>
+                <Text style={styles.systemLabel}>SYS.04</Text>
+                <Ionicons name="grid" size={24} color="#FFB84D" />
+              </View>
+              <Text style={styles.systemTitle}>CELLULAR</Text>
+              <Text style={styles.systemValue}>Active</Text>
+              <Text style={[styles.systemStatus, { color: '#FFB84D' }]}>
+                STABLE
               </Text>
             </Card>
           </View>
