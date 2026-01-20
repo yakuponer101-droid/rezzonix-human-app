@@ -24,6 +24,7 @@ export default function ScanScreen() {
   const [progress, setProgress] = useState(0);
   const [status, setStatus] = useState('preparing');
   const [pulseAnim] = useState(new Animated.Value(1));
+  const [logMessages, setLogMessages] = useState<string[]>([]);
 
   useEffect(() => {
     // Pulse animation
@@ -45,8 +46,6 @@ export default function ScanScreen() {
     // Simulate scanning progress
     startScan();
   }, []);
-
-  const [logMessages, setLogMessages] = useState<string[]>([]);
 
   const startScan = async () => {
     setStatus('analyzing');
