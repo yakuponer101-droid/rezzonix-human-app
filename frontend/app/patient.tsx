@@ -88,6 +88,78 @@ export default function PatientScreen() {
                   maxLength={3}
                 />
               </View>
+
+              {/* Gender Selection */}
+              <View style={styles.inputContainer}>
+                <Text style={styles.label}>Cinsiyet / Gender</Text>
+                <View style={styles.genderContainer}>
+                  <TouchableOpacity
+                    style={[
+                      styles.genderButton,
+                      gender === 'male' && styles.genderButtonSelected,
+                    ]}
+                    onPress={() => setGender('male')}
+                  >
+                    <Ionicons
+                      name="man"
+                      size={32}
+                      color={gender === 'male' ? COLORS.primary : COLORS.textSecondary}
+                    />
+                    <Text
+                      style={[
+                        styles.genderText,
+                        gender === 'male' && styles.genderTextSelected,
+                      ]}
+                    >
+                      Erkek
+                    </Text>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity
+                    style={[
+                      styles.genderButton,
+                      gender === 'female' && styles.genderButtonSelected,
+                    ]}
+                    onPress={() => setGender('female')}
+                  >
+                    <Ionicons
+                      name="woman"
+                      size={32}
+                      color={gender === 'female' ? COLORS.primary : COLORS.textSecondary}
+                    />
+                    <Text
+                      style={[
+                        styles.genderText,
+                        gender === 'female' && styles.genderTextSelected,
+                      ]}
+                    >
+                      Kadın
+                    </Text>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity
+                    style={[
+                      styles.genderButton,
+                      gender === 'child' && styles.genderButtonSelected,
+                    ]}
+                    onPress={() => setGender('child')}
+                  >
+                    <Ionicons
+                      name="happy"
+                      size={32}
+                      color={gender === 'child' ? COLORS.primary : COLORS.textSecondary}
+                    />
+                    <Text
+                      style={[
+                        styles.genderText,
+                        gender === 'child' && styles.genderTextSelected,
+                      ]}
+                    >
+                      Çocuk
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
             </Card>
 
             <View style={styles.buttons}>
